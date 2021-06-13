@@ -1,0 +1,77 @@
+.main {
+  height: 100vh;
+  position: relative;
+
+  .image-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    opacity: 90%;
+    position: absolute;
+    z-index: 1;
+
+    .overlay {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(11, 9, 12, 0.466);
+    }
+  }
+
+  .text-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .title {
+      margin-bottom: 1.75rem;
+    }
+
+    .introduce {
+      letter-spacing: 0.375rem;
+      margin-bottom: 1rem;
+    }
+
+    .paragraph {
+      width: 80%;
+      font-size: 1.75rem;
+      text-align: center;
+      letter-spacing: 0.25rem;
+      margin-bottom: 1rem;
+
+      .bolder {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .arrow {
+    display: inline;
+    cursor: pointer;
+    font-size: 2rem;
+    background: white;
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 101;
+    right: 2rem;
+    bottom: 2rem;
+    transition: all ease-in-out .2s;
+  }
+
+  .arrow:hover {
+    color: white;
+    background-color: transparent;
+  }
+}
